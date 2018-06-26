@@ -61,7 +61,7 @@ $ oc get route catalog
 While you are waiting for the deploy command to complete, you can log into the OpenShift web consol and check the progress of your deployment, and even view the build and deployment logs, which should look very similar to the messages seen when running the service locally.
 
 ### In the event of no jdk image
-Some versions of minishift do not include the openjdk image stream. In this case, we start using the Java S2I image we need to tell OpenShift how to find it. This is done by creating an image stream. The image stream definition can be downloaded and used. To add the image stream to your project run the following command:
+Some versions of minishift do not include the openjdk image stream. In this case, we need to use the Java S2I image to tell OpenShift how to find it. This is done by creating an image stream. The image stream definition can be downloaded here and used. To add the image stream to your project run the following command:
 
 `$ oc create -f openjdk-s2i-imagestream.json`
 
